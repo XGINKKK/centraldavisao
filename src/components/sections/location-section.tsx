@@ -51,7 +51,7 @@ export default function LocationSection() {
                 </div>
               </div>
             </div>
-            <Button asChild size="lg" className="w-full shadow-lg transition-transform hover:scale-105">
+            <Button asChild size="xl" className="w-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-primary/40 active:scale-95">
               <a href={gmapsUrl} target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="mr-2 h-5 w-5" />
                 Abrir no Google Maps

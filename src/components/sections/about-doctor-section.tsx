@@ -40,7 +40,7 @@ export default function AboutDoctorSection() {
                 </p>
               </CardContent>
             </Card>
-            <Button asChild size="lg" className="w-full sm:w-auto shadow-md transition-transform hover:scale-105">
+            <Button asChild size="xl" className="w-full sm:w-auto shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-primary/40 active:scale-95">
               <a href="#services">Ver Exames Disponíveis</a>
             </Button>
           </div>

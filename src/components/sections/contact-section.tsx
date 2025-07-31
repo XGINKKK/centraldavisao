@@ -107,7 +107,7 @@ export default function ContactSection() {
                             </FormItem>
                             )}
                         />
-                        <Button type="submit" size="lg" className="w-full shadow-lg transition-transform hover:scale-105">
+                        <Button type="submit" size="xl" className="w-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-primary/40 active:scale-95">
                             Enviar solicitação de consulta
                         </Button>
                         </form>

@@ -62,9 +62,9 @@ export default function ServicesSection() {
         </div>
         <div className="mx-auto grid grid-cols-1 gap-6 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {services.map((service) => (
-            <Card key={service.title} className="flex flex-col items-center text-center p-6 shadow-md hover:shadow-xl transition-shadow duration-300">
-              <CardHeader className="p-0">
-                <div className="bg-accent/30 p-4 rounded-full mb-4">
+            <Card key={service.title} className="flex flex-col p-6 shadow-md hover:shadow-xl transition-shadow duration-300 items-center text-center">
+              <CardHeader className="p-0 flex flex-col items-center text-center">
+                <div className="bg-accent/30 p-4 rounded-full mb-4 flex justify-center items-center">
                   {service.icon}
                 </div>
                 <CardTitle className="text-lg font-semibold">{service.title}</CardTitle>

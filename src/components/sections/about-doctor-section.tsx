@@ -10,7 +10,7 @@ export default function AboutDoctorSection() {
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
           <div className="flex justify-center">
             <Image
-              src="https://placehold.co/500x500.png"
+              src="https://i.imgur.com/MZCP0RJ.jpeg"
               alt="Dr. Caio Renato Alcântara Mota"
               width={500}
               height={500}

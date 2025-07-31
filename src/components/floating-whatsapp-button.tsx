@@ -30,7 +30,7 @@ export default function FloatingWhatsAppButton() {
     >
       <Button
         size="icon"
-        className="h-16 w-16 rounded-full bg-primary shadow-2xl transition-all duration-300 hover:bg-accent hover:scale-110"
+        className="h-16 w-16 rounded-full bg-primary shadow-2xl transition-all duration-300 hover:bg-accent hover:scale-110 animate-pulse-strong"
       >
         <WhatsAppIcon />
       </Button>

@@ -51,7 +51,7 @@ export default function DifferentiatorsSection() {
           ))}
         </div>
         <div className="text-center mt-16">
-          <Button asChild size="xl" className="shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-primary/40 active:scale-95">
+          <Button asChild size="xl" className="shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-primary/40 active:scale-95 animate-pulse-strong">
             <a href="https://wa.me/5547989146073" target="_blank" rel="noopener noreferrer">
               Fale com a Clínica
             </a>

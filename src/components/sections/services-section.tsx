@@ -76,7 +76,7 @@ export default function ServicesSection() {
           ))}
         </div>
         <div className="flex justify-center">
-            <Button asChild size="xl" className="shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-primary/40 active:scale-95">
+            <Button asChild size="xl" className="shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-primary/40 active:scale-95 animate-pulse-strong">
                 <a href="#contact">Agendar um Exame</a>
             </Button>
         </div>

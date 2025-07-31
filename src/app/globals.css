@@ -70,3 +70,20 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  @keyframes pulse-strong {
+    '0%, 100%' {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 hsl(var(--primary) / 0.7);
+    }
+    '50%' {
+      transform: scale(1.05);
+      box-shadow: 0 0 0 10px hsl(var(--primary) / 0);
+    }
+  }
+
+  .animate-pulse-strong {
+    animation: pulse-strong 2s infinite;
+  }
+}

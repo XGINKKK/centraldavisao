@@ -15,7 +15,7 @@ export default function HeroSection() {
           <p className="mx-auto max-w-[700px] text-foreground/80 md:text-xl">
             Há 18 anos cuidando da sua saúde ocular com excelência e dedicação.
           </p>
-          <Button asChild size="xl" className="shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-primary/40 active:scale-95 btn-agendar-consulta">
+          <Button asChild size="xl" className="shadow-lg btn-agendar-consulta">
             <a href="#contact">
               <Eye className="mr-2 h-6 w-6" />
               Agendar Consulta

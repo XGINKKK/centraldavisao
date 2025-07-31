@@ -50,7 +50,7 @@ export default function Header() {
           {navLinks.map((link) => (
             <NavLink key={link.href} {...link} />
           ))}
-          <Button asChild size="sm" className="shadow-md transition-transform hover:scale-105 btn-agendar-consulta">
+          <Button asChild size="sm" className="shadow-md btn-agendar-consulta">
             <a href="#contact">Agendar Consulta</a>
           </Button>
         </nav>

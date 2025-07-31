@@ -3,7 +3,8 @@
 import React, { useState, useEffect } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import { Menu, Eye } from "lucide-react";
+import { Menu } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
   { href: "#about", label: "Sobre" },
@@ -40,10 +41,9 @@ export default function Header() {
         isScrolled ? "border-b bg-background/80 backdrop-blur-sm" : "bg-background"
       }`}
     >
-      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-        <a href="#" className="flex items-center gap-2 font-bold text-lg text-primary">
-          <Eye className="h-6 w-6" />
-          <span className="font-headline">Central da Visão</span>
+      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
+        <a href="#" className="flex items-center gap-2">
+          <Image src="https://i.imgur.com/UiDrrUn.jpeg" alt="Central da Visão Logo" width={180} height={47} priority />
         </a>
 
         <nav className="hidden items-center gap-6 md:flex">
@@ -64,9 +64,8 @@ export default function Header() {
           </SheetTrigger>
           <SheetContent side="right">
             <nav className="grid gap-6 text-lg font-medium mt-8">
-              <a href="#" className="flex items-center gap-2 text-lg font-semibold text-primary" onClick={() => setSheetOpen(false)}>
-                <Eye className="h-6 w-6" />
-                Central da Visão
+              <a href="#" className="flex items-center gap-2 text-lg font-semibold" onClick={() => setSheetOpen(false)}>
+                <Image src="https://i.imgur.com/UiDrrUn.jpeg" alt="Central da Visão Logo" width={180} height={47} />
               </a>
               {navLinks.map((link) => (
                 <NavLink key={link.href} {...link} onClick={() => setSheetOpen(false)} />

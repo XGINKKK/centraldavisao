@@ -14,10 +14,10 @@ export default function HeroSection() {
           <div className="inline-block rounded-lg bg-primary/80 px-4 py-2 text-sm text-primary-foreground backdrop-blur-sm border border-primary-foreground/20">
             Oftalmologia Especializada
           </div>
-          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-primary-foreground">
+          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-primary">
             O futuro da sua visão começa aqui
           </h1>
-          <p className="mx-auto max-w-[700px] text-primary-foreground/90 md:text-xl font-medium">
+          <p className="mx-auto max-w-[700px] text-primary md:text-xl font-medium">
             Há 18 anos cuidando da sua saúde ocular com excelência e dedicação.
           </p>
           <Button asChild size="xl" className="shadow-lg btn-agendar-consulta">

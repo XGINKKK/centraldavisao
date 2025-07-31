@@ -42,29 +42,30 @@ export default function Header() {
       }`}
     >
       <div className="container mx-auto flex h-24 items-center justify-between px-4 md:px-6">
-        <div className="flex-1 md:hidden"></div>
-        <a href="#" className="flex items-center gap-2 md:absolute md:left-1/2 md:-translate-x-1/2">
+        <a href="#" className="flex items-center gap-2">
           <Image src="https://i.imgur.com/UiDrrUn.jpeg" alt="Central da Visão Logo" width={180} height={47} priority />
         </a>
 
+        <div className="flex-1 justify-center items-center md:hidden flex">
+          <a href="#" className="flex items-center gap-2">
+            <Image src="https://i.imgur.com/UiDrrUn.jpeg" alt="Central da Visão Logo" width={180} height={47} priority className="hidden"/>
+          </a>
+        </div>
+        
         <nav className="hidden items-center gap-6 md:flex">
-          {navLinks.slice(0, 2).map((link) => (
+          {navLinks.map((link) => (
             <NavLink key={link.href} {...link} />
           ))}
         </nav>
 
-        <div className="flex-1 hidden md:flex"></div>
+        <div className="hidden md:flex items-center justify-end gap-4">
+            <Button asChild size="sm" className="shadow-md btn-agendar-consulta">
+                <a href="#contact">Agendar Consulta</a>
+            </Button>
+        </div>
 
-        <nav className="hidden items-center gap-6 md:flex">
-          {navLinks.slice(2).map((link) => (
-            <NavLink key={link.href} {...link} />
-          ))}
-          <Button asChild size="sm" className="shadow-md btn-agendar-consulta">
-            <a href="#contact">Agendar Consulta</a>
-          </Button>
-        </nav>
 
-        <div className="flex flex-1 justify-end md:hidden">
+        <div className="flex justify-end md:hidden">
             <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
             <SheetTrigger asChild>
                 <Button variant="outline" size="icon">

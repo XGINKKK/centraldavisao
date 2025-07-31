@@ -42,12 +42,18 @@ export default function Header() {
       }`}
     >
       <div className="container mx-auto flex h-24 items-center justify-between px-4 md:px-6">
-        <a href="#" className="flex items-center gap-2">
+        <a href="#" className="flex items-center gap-2 md:absolute md:left-1/2 md:-translate-x-1/2">
           <Image src="https://i.imgur.com/UiDrrUn.jpeg" alt="Central da Visão Logo" width={180} height={47} priority />
         </a>
 
         <nav className="hidden items-center gap-6 md:flex">
-          {navLinks.map((link) => (
+          {navLinks.slice(0, 2).map((link) => (
+            <NavLink key={link.href} {...link} />
+          ))}
+        </nav>
+
+        <nav className="hidden items-center gap-6 md:flex">
+          {navLinks.slice(2).map((link) => (
             <NavLink key={link.href} {...link} />
           ))}
           <Button asChild size="sm" className="shadow-md btn-agendar-consulta">
@@ -64,7 +70,7 @@ export default function Header() {
           </SheetTrigger>
           <SheetContent side="right">
             <nav className="grid gap-6 text-lg font-medium mt-8">
-              <a href="#" className="flex items-center gap-2 text-lg font-semibold" onClick={() => setSheetOpen(false)}>
+              <a href="#" className="flex items-center justify-center gap-2 text-lg font-semibold" onClick={() => setSheetOpen(false)}>
                 <Image src="https://i.imgur.com/UiDrrUn.jpeg" alt="Central da Visão Logo" width={180} height={47} />
               </a>
               {navLinks.map((link) => (

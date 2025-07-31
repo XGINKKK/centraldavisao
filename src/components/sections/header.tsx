@@ -50,7 +50,7 @@ export default function Header() {
           {navLinks.map((link) => (
             <NavLink key={link.href} {...link} />
           ))}
-          <Button asChild size="sm" className="shadow-md transition-transform hover:scale-105">
+          <Button asChild size="sm" className="shadow-md transition-transform hover:scale-105 btn-agendar-consulta">
             <a href="#contact">Agendar Consulta</a>
           </Button>
         </nav>
@@ -71,7 +71,7 @@ export default function Header() {
               {navLinks.map((link) => (
                 <NavLink key={link.href} {...link} onClick={() => setSheetOpen(false)} />
               ))}
-              <Button asChild size="lg" className="mt-4 shadow-md">
+              <Button asChild size="lg" className="mt-4 shadow-md btn-agendar-consulta">
                  <a href="#contact" onClick={() => setSheetOpen(false)}>Agendar Consulta</a>
               </Button>
             </nav>

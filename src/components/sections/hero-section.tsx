@@ -5,8 +5,8 @@ export default function HeroSection() {
   return (
     <section 
       id="home" 
-      className="relative w-full py-20 md:py-32 lg:py-40 bg-cover bg-[30%_top] md:bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('https://i.imgur.com/9DQ4rW7.jpeg')" }}
+      className="relative w-full py-20 md:py-32 lg:py-40 bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('https://i.imgur.com/qdWhkzn.jpeg')" }}
     >
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm z-0"></div>
       <div className="container relative z-10 mx-auto px-4 md:px-6 text-center">

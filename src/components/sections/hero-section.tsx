@@ -3,10 +3,10 @@ import { Eye } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section id="home" className="w-full py-20 md:py-32 lg:py-40 bg-card">
+    <section id="home" className="w-full py-20 md:py-32 lg:py-40 bg-gray-50">
       <div className="container mx-auto px-4 md:px-6 text-center">
         <div className="flex flex-col items-center space-y-6">
-          <div className="inline-block rounded-lg bg-accent px-3 py-1 text-sm text-accent-foreground">
+          <div className="inline-block rounded-lg bg-accent/50 px-3 py-1 text-sm text-primary">
             Oftalmologia Especializada
           </div>
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-primary">

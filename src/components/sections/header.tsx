@@ -41,7 +41,7 @@ export default function Header() {
         isScrolled ? "border-b bg-background/80 backdrop-blur-sm" : "bg-background"
       }`}
     >
-      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
+      <div className="container mx-auto flex h-24 items-center justify-between px-4 md:px-6">
         <a href="#" className="flex items-center gap-2">
           <Image src="https://i.imgur.com/UiDrrUn.jpeg" alt="Central da Visão Logo" width={180} height={47} priority />
         </a>

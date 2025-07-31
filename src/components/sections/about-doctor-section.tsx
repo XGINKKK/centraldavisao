@@ -14,7 +14,7 @@ export default function AboutDoctorSection() {
               alt="Dr. Caio Renato Alcântara Mota"
               width={500}
               height={500}
-              className="rounded-full object-cover shadow-2xl aspect-square"
+              className="rounded-full object-cover object-top shadow-2xl aspect-square"
               data-ai-hint="doctor portrait"
             />
           </div>

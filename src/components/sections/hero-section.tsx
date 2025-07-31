@@ -8,7 +8,7 @@ export default function HeroSection() {
       className="relative w-full py-20 md:py-32 lg:py-40 bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('https://i.imgur.com/9DQ4rW7.jpeg')" }}
     >
-      <div className="absolute inset-0 bg-black/50 z-0"></div>
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm z-0"></div>
       <div className="container relative z-10 mx-auto px-4 md:px-6 text-center">
         <div className="flex flex-col items-center space-y-6">
           <div className="inline-block rounded-lg bg-primary/20 px-4 py-2 text-sm text-primary-foreground backdrop-blur-sm border border-primary-foreground/20">

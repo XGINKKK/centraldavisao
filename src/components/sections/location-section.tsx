@@ -19,22 +19,14 @@ export default function LocationSection() {
         </div>
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
           <Card className="overflow-hidden shadow-xl">
-            <a href={gmapsUrl} target="_blank" rel="noopener noreferrer" className="block relative">
-                <Image
-                    src="https://placehold.co/800x600.png"
-                    alt="Mapa da localização da clínica"
-                    width={800}
-                    height={600}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                    data-ai-hint="clinic location"
-                />
-                <div className="absolute inset-0 bg-primary/20 flex items-center justify-center">
-                    <div className="bg-background/80 p-4 rounded-lg text-center">
-                        <MapPin className="h-10 w-10 text-primary mx-auto mb-2" />
-                        <p className="font-semibold text-foreground">Ver no Google Maps</p>
-                    </div>
-                </div>
-            </a>
+              <iframe
+                className="w-full h-full aspect-[4/3] min-h-[450px]"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.041682393248!2d-48.64199998826724!3d-26.9870797765943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b5c8f5858e7b%3A0x7a6ca29d71187a71!2sCentral%20da%20Vis%C3%A3o%20oftalmologia%20em%20Balne%C3%A1rio%20Cambori%C3%BA!5e0!3m2!1sen!2sbr!4v1720645607384!5m2!1sen!2sbr"
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Endereço da Clínica no Google Maps"
+              ></iframe>
           </Card>
           <div className="flex flex-col justify-center space-y-6">
             <div className="space-y-4">

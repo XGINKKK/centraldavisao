@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Clock, ExternalLink } from "lucide-react";
 
 export default function LocationSection() {
-    const gmapsUrl = "https://www.google.com/maps/search/?api=1&query=Rua+901,+431+-+Sala+03,+Balne%C3%A1rio+Cambori%C3%BA+-+SC";
+    const gmapsUrl = "https://www.google.com/maps/place/Central+da+Vis%C3%A3o+oftalmologia+em+Balne%C3%A1rio+Cambori%C3%BA/@-26.9870749,-48.6443066,17z/data=!3m1!4b1!4m6!3m5!1s0x94d8b5c8f5858e7b:0x7a6ca29d71187a71!8m2!3d-26.9870798!4d-48.6394357!16s%2Fg%2F11sjwq7d00?entry=ttu";
 
   return (
     <section id="location" className="w-full py-20 md:py-28 lg:py-32 bg-card">
@@ -26,7 +26,7 @@ export default function LocationSection() {
                     width={800}
                     height={600}
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                    data-ai-hint="street map"
+                    data-ai-hint="clinic location"
                 />
                 <div className="absolute inset-0 bg-primary/20 flex items-center justify-center">
                     <div className="bg-background/80 p-4 rounded-lg text-center">

@@ -41,7 +41,7 @@ export default function Header() {
         isScrolled ? "border-b bg-background/80 backdrop-blur-sm" : "bg-background"
       }`}
     >
-      <div className="container mx-auto flex h-24 items-center justify-between px-4 md:px-6">
+      <div className="container mx-auto flex h-24 items-center justify-center md:justify-between px-4 md:px-6">
         <a href="#" className="flex items-center gap-2">
           <Image src="https://i.imgur.com/UiDrrUn.jpeg" alt="Central da Visão Logo" width={180} height={47} priority />
         </a>
@@ -59,7 +59,7 @@ export default function Header() {
         </div>
 
 
-        <div className="flex justify-end md:hidden">
+        <div className="absolute right-4 top-1/2 -translate-y-1/2 md:hidden">
             <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
             <SheetTrigger asChild>
                 <Button variant="outline" size="icon">

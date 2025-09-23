@@ -10,12 +10,12 @@ export default function AboutDoctorSection() {
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
           <div className="flex justify-center">
             <Image
-              src="https://picsum.photos/seed/clinic/500/500"
-              alt="Interior da clínica Central da Visão"
+              src="https://i.imgur.com/UiDrrUn.jpeg"
+              alt="Central da Visão Logo"
               width={500}
-              height={500}
-              className="rounded-lg object-cover shadow-2xl aspect-square"
-              data-ai-hint="clinic interior"
+              height={156}
+              className="rounded-lg object-contain shadow-2xl aspect-video"
+              data-ai-hint="logo"
             />
           </div>
           <div className="space-y-6">

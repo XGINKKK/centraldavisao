@@ -90,4 +90,35 @@ body {
   .btn-agendar-consulta {
     animation: pulse 2s infinite;
   }
+
+  @keyframes reveal-text {
+    from {
+      background-size: 0% 100%;
+    }
+    to {
+      background-size: 100% 100%;
+    }
+  }
+
+  @keyframes slide-eye {
+    from {
+      left: -5%;
+    }
+    to {
+      left: 105%;
+    }
+  }
+
+  .animate-reveal {
+    background: linear-gradient(to right, hsl(var(--primary)), hsl(var(--primary)));
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: reveal-text 2.5s forwards 0.5s;
+  }
+
+  .animate-eye-scan {
+    animation: slide-eye 2.5s forwards 0.5s;
+  }
 }

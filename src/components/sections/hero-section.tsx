@@ -1,41 +1,21 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Eye } from "lucide-react";
 
 const fullTitle = "O futuro da sua visão começa aqui";
 
 export default function HeroSection() {
-  const [title, setTitle] = useState("");
-  const [isAnimating, setIsAnimating] = useState(true);
-
-  useEffect(() => {
-    setTitle(""); // Reset on mount
-    let i = 0;
-    const interval = setInterval(() => {
-      if (i < fullTitle.length) {
-        setTitle(fullTitle.substring(0, i + 1));
-        i++;
-      } else {
-        setIsAnimating(false);
-        clearInterval(interval);
-      }
-    }, 100); // Adjust typing speed here
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <section 
       id="home" 
-      className="relative w-full py-20 md:py-32 lg:py-40"
+      className="relative w-full py-20 md:py-32 lg:py-40 overflow-hidden"
     >
        <div 
         className="absolute inset-0 bg-cover bg-center filter blur-sm"
         style={{ 
           backgroundImage: "url('https://i.imgur.com/qdWhkzn.jpeg')",
-          backgroundPosition: '-250px -150px',
+          transform: 'scale(1.1)',
         }}
       />
       
@@ -44,10 +24,12 @@ export default function HeroSection() {
           <div className="inline-block rounded-lg bg-primary/10 px-4 py-2 text-sm text-primary font-medium border border-primary/20">
             Oftalmologia Especializada
           </div>
-          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-primary mt-4 text-center">
-            {title}
-            {isAnimating && <Eye className="inline-block h-8 w-8 text-primary relative -top-1" />}
-          </h1>
+          <div className="relative w-full mt-4">
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-center animate-reveal">
+              {fullTitle}
+            </h1>
+            <Eye className="absolute -top-2 h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 text-primary animate-eye-scan" />
+          </div>
           <p className="mx-auto max-w-[700px] text-foreground/80 md:text-xl font-medium mt-6 text-center">
             Há 18 anos cuidando da sua saúde ocular com excelência e dedicação.
           </p>

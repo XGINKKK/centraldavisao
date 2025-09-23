@@ -20,8 +20,8 @@ const differentiators = [
   },
   {
     icon: <Gem className="h-8 w-8 text-primary" />,
-    title: "Excelência Acessível",
-    description: "Compromisso com a qualidade que cabe no seu planejamento."
+    title: "Melhor Custo-Benefício da Região",
+    description: "Qualidade de ponta com valores que surpreendem. Consulte!"
   }
 ];
 

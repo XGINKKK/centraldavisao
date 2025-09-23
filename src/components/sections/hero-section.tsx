@@ -6,14 +6,10 @@ export default function HeroSection() {
     <section 
       id="home" 
       className="relative w-full py-20 md:py-32 lg:py-40 bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('https://i.imgur.com/qdWhkzn.jpeg')" }}
+      style={{ 
+        backgroundImage: "linear-gradient(135deg, rgba(79, 70, 229, 0.85) 0%, rgba(99, 102, 241, 0.75) 100%), url('https://i.imgur.com/qdWhkzn.jpeg')"
+      }}
     >
-      <div 
-        className="absolute inset-0 z-0"
-        style={{
-          background: 'linear-gradient(135deg, rgba(79, 70, 229, 0.85) 0%, rgba(99, 102, 241, 0.75) 100%)'
-        }}
-      ></div>
       <div className="container relative z-10 mx-auto px-4 md:px-6 text-center">
         <div className="flex flex-col items-center space-y-6">
           <div className="inline-block rounded-lg bg-white/20 px-4 py-2 text-sm text-white backdrop-blur-sm border border-white/30">

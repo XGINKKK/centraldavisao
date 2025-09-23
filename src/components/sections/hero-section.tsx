@@ -8,10 +8,15 @@ export default function HeroSection() {
       className="relative w-full py-20 md:py-32 lg:py-40 bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('https://i.imgur.com/qdWhkzn.jpeg')" }}
     >
-      <div className="absolute inset-0 bg-black/30 backdrop-blur-sm z-0"></div>
+      <div 
+        className="absolute inset-0 z-0"
+        style={{
+          background: 'linear-gradient(135deg, rgba(79, 70, 229, 0.85) 0%, rgba(99, 102, 241, 0.75) 100%)'
+        }}
+      ></div>
       <div className="container relative z-10 mx-auto px-4 md:px-6 text-center">
         <div className="flex flex-col items-center space-y-6">
-          <div className="inline-block rounded-lg bg-primary/80 px-4 py-2 text-sm text-primary-foreground backdrop-blur-sm border border-primary-foreground/20">
+          <div className="inline-block rounded-lg bg-white/20 px-4 py-2 text-sm text-white backdrop-blur-sm border border-white/30">
             Oftalmologia Especializada
           </div>
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-white drop-shadow-lg">
@@ -20,7 +25,7 @@ export default function HeroSection() {
           <p className="mx-auto max-w-[700px] text-white/90 md:text-xl font-medium drop-shadow-md">
             Há 18 anos cuidando da sua saúde ocular com excelência e dedicação.
           </p>
-          <Button asChild size="xl" className="shadow-lg btn-agendar-consulta">
+          <Button asChild size="xl" className="shadow-lg btn-agendar-consulta bg-white text-primary hover:bg-white/90">
             <a href="#contact">
               <Eye className="mr-2 h-6 w-6" />
               Agendar Consulta

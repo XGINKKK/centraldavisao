@@ -54,24 +54,20 @@ export default function HeroSection() {
         className="absolute inset-0 bg-cover bg-center filter blur-sm"
         style={{ 
           backgroundImage: "url('https://i.imgur.com/qdWhkzn.jpeg')",
-          backgroundPosition: '15% 30%',
+          backgroundPosition: '-150px -50px',
         }}
       />
       
       <div className="container relative z-10 mx-auto px-4 md:px-6 flex justify-center text-center">
-        <div className="bg-white/90 backdrop-blur-lg rounded-2xl p-8 md:p-12 shadow-2xl max-w-2xl min-h-[340px] md:min-h-[400px] flex flex-col items-center justify-center">
+        <div className="bg-white/90 backdrop-blur-lg rounded-2xl p-8 md:p-12 shadow-2xl max-w-2xl flex flex-col items-center justify-center">
           <div className="inline-block rounded-lg bg-primary/10 px-4 py-2 text-sm text-primary font-medium border border-primary/20">
             Oftalmologia Especializada
           </div>
-          <div className="relative mt-4 w-full">
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-primary text-center flex items-center justify-center">
-                <div className="relative flex items-center">
-                  <span>{title}</span>
-                  <span style={{ opacity: showCursor ? 1 : 0 }} className="text-primary/50">|</span>
-                  <Eye style={{ opacity: title ? 1 : 0 }} className="absolute -right-10 -top-2 h-8 w-8 text-primary"/>
-                </div>
-            </h1>
-          </div>
+          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-primary mt-4 min-h-[192px] md:min-h-[144px]">
+              {title}
+              <span style={{ opacity: showCursor ? 1 : 0, animation: title === fullTitle ? 'none' : ''}} className="text-primary/50">|</span>
+              <Eye style={{ opacity: title ? 1 : 0 }} className="inline-block h-8 w-8 text-primary -top-2 relative"/>
+          </h1>
           <p className="mx-auto max-w-[700px] text-foreground/80 md:text-xl font-medium mt-4 text-center">
             Há 18 anos cuidando da sua saúde ocular com excelência e dedicação.
           </p>

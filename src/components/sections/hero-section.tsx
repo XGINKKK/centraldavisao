@@ -12,10 +12,6 @@ export default function HeroSection() {
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
   const [showCursor, setShowCursor] = useState(true);
-  
-  const h1Ref = useRef<HTMLHeadingElement>(null);
-  const spanRef = useRef<HTMLSpanElement>(null);
-  const [eyePosition, setEyePosition] = useState(0);
 
   useEffect(() => {
     const handleTyping = () => {
@@ -49,25 +45,6 @@ export default function HeroSection() {
     return () => clearInterval(cursorInterval);
   }, []);
 
-  useEffect(() => {
-    if (spanRef.current && h1Ref.current) {
-        const textWidth = spanRef.current.offsetWidth;
-        const h1ComputedStyle = getComputedStyle(h1Ref.current);
-        const h1Padding = parseFloat(h1ComputedStyle.paddingLeft);
-        const h1TextAlign = h1ComputedStyle.textAlign;
-
-        if (h1TextAlign === 'center') {
-            const h1Width = h1Ref.current.offsetWidth;
-            const textContainerWidth = h1Width - (parseFloat(h1ComputedStyle.paddingLeft) + parseFloat(h1ComputedStyle.paddingRight));
-            const startOffset = (textContainerWidth - textWidth) / 2;
-            setEyePosition(h1Padding + startOffset + textWidth);
-        } else {
-            setEyePosition(h1Padding + textWidth);
-        }
-    }
-  }, [title]);
-
-
   return (
     <section 
       id="home" 
@@ -87,10 +64,12 @@ export default function HeroSection() {
             Oftalmologia Especializada
           </div>
           <div className="relative mt-4 w-full">
-            <h1 ref={h1Ref} className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-primary text-center h-36 sm:h-48 md:h-56 flex items-center justify-center">
-                <span ref={spanRef}>{title}</span>
-                <span style={{ opacity: showCursor ? 1 : 0 }} className="text-primary/50 -ml-1">|</span>
-                <Eye style={{ left: `${eyePosition}px`, opacity: title ? 1 : 0, top: '-0.5rem' }} className="absolute h-8 w-8 text-primary transition-all duration-100 ease-linear"/>
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-primary text-center h-36 sm:h-48 md:h-56 flex items-center justify-center">
+                <div className="relative flex items-center justify-center">
+                  <span>{title}</span>
+                  <span style={{ opacity: showCursor ? 1 : 0 }} className="text-primary/50 -ml-1">|</span>
+                  <Eye style={{ opacity: title ? 1 : 0 }} className="absolute -right-10 -top-2 h-8 w-8 text-primary"/>
+                </div>
             </h1>
           </div>
           <p className="mx-auto max-w-[700px] text-foreground/80 md:text-xl font-medium mt-4 text-center">

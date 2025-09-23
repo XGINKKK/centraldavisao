@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Award, HeartHandshake, Bot, MessageCircle, Gem } from "lucide-react";
+import { Award, HeartHandshake, Bot, MessageCircle, Gem, UserCheck } from "lucide-react";
 
 const differentiators = [
   {
@@ -17,6 +17,11 @@ const differentiators = [
     icon: <Bot className="h-8 w-8 text-primary" />,
     title: "Equipamentos Modernos",
     description: "Tecnologia de ponta para diagnósticos precisos."
+  },
+  {
+    icon: <UserCheck className="h-8 w-8 text-primary" />,
+    title: "Atendimento Particular",
+    description: "Foco total em você, sem a pressa dos convênios."
   },
   {
     icon: <Gem className="h-8 w-8 text-primary" />,
@@ -37,7 +42,7 @@ export default function DifferentiatorsSection() {
             Compromisso com a sua saúde ocular em cada detalhe.
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
           {differentiators.map((item) => (
             <div key={item.title} className="flex items-start gap-4">
               <div className="bg-accent/30 p-3 rounded-full flex-shrink-0">

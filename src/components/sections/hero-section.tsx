@@ -10,7 +10,6 @@ export default function HeroSection() {
         backgroundImage: "url('https://i.imgur.com/qdWhkzn.jpeg')"
       }}
     >
-      <div className="absolute inset-0 bg-black/50" />
       <div className="container relative z-10 mx-auto px-4 md:px-6 text-center">
         <div className="flex flex-col items-center space-y-6">
           <div className="inline-block rounded-lg bg-white/20 px-4 py-2 text-sm text-white backdrop-blur-sm border border-white/30">

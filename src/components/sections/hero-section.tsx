@@ -8,7 +8,7 @@ export default function HeroSection() {
       className="relative w-full py-20 md:py-32 lg:py-40 bg-cover bg-no-repeat"
       style={{ 
         backgroundImage: "url('https://i.imgur.com/qdWhkzn.jpeg')",
-        backgroundPosition: '35% 60%',
+        backgroundPosition: '15% 60%',
         backgroundSize: '180%',
       }}
     >

@@ -20,8 +20,8 @@ const differentiators = [
   },
   {
     icon: <Gem className="h-8 w-8 text-primary" />,
-    title: "Melhor Custo-Benefício da Região",
-    description: "Qualidade de ponta com valores que surpreendem. Consulte!"
+    title: "Valor que surpreende",
+    description: "Excelência em oftalmologia com condições que você não espera. Consulte."
   }
 ];
 

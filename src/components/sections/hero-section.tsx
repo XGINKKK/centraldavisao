@@ -67,23 +67,23 @@ export default function HeroSection() {
         className="absolute inset-0 bg-cover bg-center filter blur-sm"
         style={{ 
           backgroundImage: "url('https://i.imgur.com/qdWhkzn.jpeg')",
-          backgroundPosition: '0% 25%',
+          backgroundPosition: '100% 25%',
         }}
       />
       
       <div className="container relative z-10 mx-auto px-4 md:px-6 flex justify-center text-center">
-        <div className="bg-white/90 backdrop-blur-lg rounded-2xl p-8 md:p-12 shadow-2xl max-w-2xl min-h-[340px] md:min-h-[400px]">
+        <div className="bg-white/90 backdrop-blur-lg rounded-2xl p-8 md:p-12 shadow-2xl max-w-2xl min-h-[340px] md:min-h-[400px] flex flex-col items-center">
           <div className="inline-block rounded-lg bg-primary/10 px-4 py-2 text-sm text-primary font-medium border border-primary/20">
             Oftalmologia Especializada
           </div>
           <div className="relative mt-4">
-            <h1 ref={h1Ref} className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-primary text-left h-36 sm:h-48 md:h-56">
+            <h1 ref={h1Ref} className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-primary text-center h-36 sm:h-48 md:h-56">
                 <span ref={spanRef}>{title}</span>
                 <span style={{ opacity: showCursor ? 1 : 0 }} className="text-primary/50">|</span>
                 <Eye style={{ left: `${eyePosition}px`, opacity: title ? 1 : 0 }} className="absolute top-0 -mt-1 h-8 w-8 text-primary transition-all duration-100 ease-linear"/>
             </h1>
           </div>
-          <p className="mx-auto max-w-[700px] text-foreground/80 md:text-xl font-medium mt-4">
+          <p className="mx-auto max-w-[700px] text-foreground/80 md:text-xl font-medium mt-4 text-center">
             Há 18 anos cuidando da sua saúde ocular com excelência e dedicação.
           </p>
           <Button asChild size="xl" className="shadow-lg btn-agendar-consulta mt-6">

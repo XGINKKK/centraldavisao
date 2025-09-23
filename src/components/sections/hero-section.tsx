@@ -8,8 +8,8 @@ export default function HeroSection() {
       className="relative w-full py-20 md:py-32 lg:py-40 bg-cover bg-no-repeat"
       style={{ 
         backgroundImage: "url('https://i.imgur.com/qdWhkzn.jpeg')",
-        backgroundPosition: 'center 60%',
-        backgroundSize: '150%',
+        backgroundPosition: '35% 60%',
+        backgroundSize: '180%',
       }}
     >
       <div className="absolute inset-0 bg-black/30" />

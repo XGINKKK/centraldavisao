@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Stethoscope } from "lucide-react";
+import { Building } from "lucide-react";
 
 export default function AboutDoctorSection() {
   return (
@@ -10,33 +10,31 @@ export default function AboutDoctorSection() {
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
           <div className="flex justify-center">
             <Image
-              src="https://i.imgur.com/MZCP0RJ.jpeg"
-              alt="Dr. Caio Renato Alcântara Mota"
+              src="https://picsum.photos/seed/clinic/500/500"
+              alt="Interior da clínica Central da Visão"
               width={500}
               height={500}
-              className="rounded-full object-cover object-top shadow-2xl aspect-square"
-              data-ai-hint="doctor portrait"
+              className="rounded-lg object-cover shadow-2xl aspect-square"
+              data-ai-hint="clinic interior"
             />
           </div>
           <div className="space-y-6">
             <div className="space-y-3">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline text-primary">
-                Dr. Caio Renato Alcântara Mota
+                Sobre a Clínica
               </h2>
-              <p className="text-lg font-medium text-foreground/80">CRM/SC: 37667</p>
+              <p className="text-lg font-medium text-foreground/80">Cuidando da sua visão com tecnologia e dedicação.</p>
             </div>
             <Card className="bg-card/50">
                 <CardHeader>
                     <CardTitle className="flex items-center gap-2 text-xl font-semibold">
-                        <Stethoscope className="text-primary"/>
-                        Sobre o Médico
+                        <Building className="text-primary"/>
+                        Nossa Missão
                     </CardTitle>
                 </CardHeader>
               <CardContent>
                 <p className="text-foreground/90 leading-relaxed">
-                  Médico oftalmologista com formação em Medicina e especialização em Oftalmologia. 
-                  Atua no diagnóstico, prevenção e tratamento das principais doenças oculares com 
-                  atendimento humanizado e individualizado.
+                  Nossa missão é oferecer um atendimento oftalmológico de excelência, utilizando tecnologia de ponta e uma equipe qualificada para diagnosticar, prevenir e tratar as principais doenças oculares, sempre com um cuidado humanizado e individualizado.
                 </p>
               </CardContent>
             </Card>

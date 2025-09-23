@@ -11,7 +11,7 @@ export default function HeroSection() {
         className="absolute inset-0 bg-cover bg-center filter blur-sm"
         style={{ 
           backgroundImage: "url('https://i.imgur.com/qdWhkzn.jpeg')",
-          backgroundPosition: '15% 30%',
+          backgroundPosition: '120% -20%',
         }}
       />
       

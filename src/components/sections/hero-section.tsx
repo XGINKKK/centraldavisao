@@ -63,7 +63,7 @@ export default function HeroSection() {
           <div className="inline-block rounded-lg bg-primary/10 px-4 py-2 text-sm text-primary font-medium border border-primary/20">
             Oftalmologia Especializada
           </div>
-          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-primary mt-4 min-h-[192px] md:min-h-[144px]">
+          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-primary mt-4">
               {title}
               <span style={{ opacity: showCursor ? 1 : 0, animation: title === fullTitle ? 'none' : ''}} className="text-primary/50">|</span>
               <Eye style={{ opacity: title ? 1 : 0 }} className="inline-block h-8 w-8 text-primary -top-2 relative"/>

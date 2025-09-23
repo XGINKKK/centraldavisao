@@ -54,20 +54,20 @@ export default function HeroSection() {
         className="absolute inset-0 bg-cover bg-center filter blur-sm"
         style={{ 
           backgroundImage: "url('https://i.imgur.com/qdWhkzn.jpeg')",
-          backgroundPosition: '100% center',
+          backgroundPosition: '15% 30%',
         }}
       />
       
       <div className="container relative z-10 mx-auto px-4 md:px-6 flex justify-center text-center">
-        <div className="bg-white/90 backdrop-blur-lg rounded-2xl p-8 md:p-12 shadow-2xl max-w-2xl min-h-[340px] md:min-h-[400px] flex flex-col items-center">
+        <div className="bg-white/90 backdrop-blur-lg rounded-2xl p-8 md:p-12 shadow-2xl max-w-2xl min-h-[340px] md:min-h-[400px] flex flex-col items-center justify-center">
           <div className="inline-block rounded-lg bg-primary/10 px-4 py-2 text-sm text-primary font-medium border border-primary/20">
             Oftalmologia Especializada
           </div>
           <div className="relative mt-4 w-full">
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-primary text-center h-36 sm:h-48 md:h-56 flex items-center justify-center">
-                <div className="relative flex items-center justify-center">
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-primary text-center flex items-center justify-center">
+                <div className="relative flex items-center">
                   <span>{title}</span>
-                  <span style={{ opacity: showCursor ? 1 : 0 }} className="text-primary/50 -ml-1">|</span>
+                  <span style={{ opacity: showCursor ? 1 : 0 }} className="text-primary/50">|</span>
                   <Eye style={{ opacity: title ? 1 : 0 }} className="absolute -right-10 -top-2 h-8 w-8 text-primary"/>
                 </div>
             </h1>

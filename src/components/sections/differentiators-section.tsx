@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Award, HeartHandshake, Bot, MessageCircle } from "lucide-react";
+import { Award, HeartHandshake, Bot, MessageCircle, Gem } from "lucide-react";
 
 const differentiators = [
   {
@@ -19,9 +19,9 @@ const differentiators = [
     description: "Tecnologia de ponta para diagnósticos precisos."
   },
   {
-    icon: <MessageCircle className="h-8 w-8 text-primary" />,
-    title: "Agendamento Rápido",
-    description: "Facilidade e agilidade para marcar sua consulta pelo WhatsApp."
+    icon: <Gem className="h-8 w-8 text-primary" />,
+    title: "Excelência Acessível",
+    description: "Compromisso com a qualidade que cabe no seu planejamento."
   }
 ];
 

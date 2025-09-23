@@ -23,7 +23,7 @@ export default function AboutDoctorSection() {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline text-primary">
                 Sobre a Clínica
               </h2>
-              <p className="text-lg font-medium text-foreground/80">Cuidando da sua visão com tecnologia e dedicação.</p>
+              <p className="text-lg font-medium text-foreground/80">Cuidando da sua visão com dedicação.</p>
             </div>
             <Card className="bg-card/50">
                 <CardHeader>
@@ -34,7 +34,7 @@ export default function AboutDoctorSection() {
                 </CardHeader>
               <CardContent>
                 <p className="text-foreground/90 leading-relaxed">
-                  Nossa missão é oferecer um atendimento oftalmológico de excelência, utilizando tecnologia de ponta e uma equipe qualificada para diagnosticar, prevenir e tratar as principais doenças oculares, sempre com um cuidado humanizado e individualizado.
+                  Nossa missão é oferecer um atendimento oftalmológico de excelência, com uma equipe qualificada para diagnosticar, prevenir e tratar as principais doenças oculares, sempre com um cuidado humanizado e individualizado.
                 </p>
               </CardContent>
             </Card>

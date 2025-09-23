@@ -50,10 +50,20 @@ export default function HeroSection() {
   }, []);
 
   useEffect(() => {
-    if (spanRef.current) {
+    if (spanRef.current && h1Ref.current) {
         const textWidth = spanRef.current.offsetWidth;
-        const h1Padding = h1Ref.current ? parseFloat(getComputedStyle(h1Ref.current).paddingLeft) : 0;
-        setEyePosition(h1Padding + textWidth);
+        const h1ComputedStyle = getComputedStyle(h1Ref.current);
+        const h1Padding = parseFloat(h1ComputedStyle.paddingLeft);
+        const h1TextAlign = h1ComputedStyle.textAlign;
+
+        if (h1TextAlign === 'center') {
+            const h1Width = h1Ref.current.offsetWidth;
+            const textContainerWidth = h1Width - (parseFloat(h1ComputedStyle.paddingLeft) + parseFloat(h1ComputedStyle.paddingRight));
+            const startOffset = (textContainerWidth - textWidth) / 2;
+            setEyePosition(h1Padding + startOffset + textWidth);
+        } else {
+            setEyePosition(h1Padding + textWidth);
+        }
     }
   }, [title]);
 
@@ -63,11 +73,11 @@ export default function HeroSection() {
       id="home" 
       className="relative w-full py-20 md:py-32 lg:py-40"
     >
-      <div 
+       <div 
         className="absolute inset-0 bg-cover bg-center filter blur-sm"
         style={{ 
           backgroundImage: "url('https://i.imgur.com/qdWhkzn.jpeg')",
-          backgroundPosition: '100% 25%',
+          backgroundPosition: '-25% 40%',
         }}
       />
       
@@ -76,11 +86,11 @@ export default function HeroSection() {
           <div className="inline-block rounded-lg bg-primary/10 px-4 py-2 text-sm text-primary font-medium border border-primary/20">
             Oftalmologia Especializada
           </div>
-          <div className="relative mt-4">
-            <h1 ref={h1Ref} className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-primary text-center h-36 sm:h-48 md:h-56">
+          <div className="relative mt-4 w-full">
+            <h1 ref={h1Ref} className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-primary text-center h-36 sm:h-48 md:h-56 flex items-center justify-center">
                 <span ref={spanRef}>{title}</span>
-                <span style={{ opacity: showCursor ? 1 : 0 }} className="text-primary/50">|</span>
-                <Eye style={{ left: `${eyePosition}px`, opacity: title ? 1 : 0 }} className="absolute top-0 -mt-1 h-8 w-8 text-primary transition-all duration-100 ease-linear"/>
+                <span style={{ opacity: showCursor ? 1 : 0 }} className="text-primary/50 -ml-1">|</span>
+                <Eye style={{ left: `${eyePosition}px`, opacity: title ? 1 : 0, top: '-0.5rem' }} className="absolute h-8 w-8 text-primary transition-all duration-100 ease-linear"/>
             </h1>
           </div>
           <p className="mx-auto max-w-[700px] text-foreground/80 md:text-xl font-medium mt-4 text-center">

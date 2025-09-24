@@ -47,8 +47,15 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section id="services" className="w-full py-20 md:py-28 lg:py-32 bg-card">
-      <div className="container mx-auto px-4 md:px-6">
+    <section 
+      id="services" 
+      className="relative w-full py-20 md:py-28 lg:py-32 bg-card"
+    >
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-fixed opacity-10"
+        style={{ backgroundImage: "url('https://i.imgur.com/Ws7KISz.jpeg')" }}
+      />
+      <div className="container relative z-10 mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="inline-block rounded-lg bg-accent px-3 py-1 text-sm text-accent-foreground">
             Nossos Serviços
@@ -62,7 +69,7 @@ export default function ServicesSection() {
         </div>
         <div className="mx-auto grid grid-cols-1 gap-6 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {services.map((service) => (
-            <Card key={service.title} className="flex flex-col p-6 shadow-md hover:shadow-xl transition-shadow duration-300 items-center text-center">
+            <Card key={service.title} className="flex flex-col p-6 bg-background/80 backdrop-blur-sm shadow-md hover:shadow-xl transition-shadow duration-300 items-center text-center">
               <CardHeader className="p-0 flex flex-col items-center text-center">
                 <div className="bg-accent/30 p-4 rounded-full mb-4 flex justify-center items-center">
                   {service.icon}

@@ -21,7 +21,7 @@ export default function AboutDoctorSection() {
           <div className="space-y-6">
             <div className="space-y-3">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline text-primary">
-                Sobre a Clínica
+                Sobre o Consultório
               </h2>
               <p className="text-lg font-medium text-foreground/80">Cuidando da sua visão com dedicação.</p>
             </div>
